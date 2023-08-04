@@ -9,6 +9,9 @@ import { NotesService } from './notes.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   newNote: Note = new Note('', '');
   notes: Note[] = [];
   errMessage: string = '';
